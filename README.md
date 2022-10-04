@@ -36,3 +36,8 @@
 - A funcionalidade de criar um layout permite o reaproveitamento de código;
 - Por exemplo: Podemos utilizar o mesmo header e footer em todas as páginas sem repetir código;
 - Mas o layout do blade não se limita a isso, podemos criar seções do site por meio do layout e também mudar o title da página;
+## Parâmetros nas rotas
+- Podemos mudar como uma view nos responde adicionando parâmetros a uma rota;
+- Ao redefinir a rota devemos colocar o parâmetro desta maneira: {id};
+- Podemos ter parâmetros opcionais também, adicionando uma ?;
+- O laravel aceita também query parameters, utilizando a seguinte sintaxe: ?nome=Marcos&idade=55;
