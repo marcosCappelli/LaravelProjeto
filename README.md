@@ -53,3 +53,14 @@
 - Isso nos proporciona maior liberdade e também segurança na aplicação;
 - O Laravel utiliza um ORM (Object-Relational Mapping) chamada Eloquent;
 - E também para a criação de tabelas as migrations;
+## Migrations
+- As migrations funcionam como um versionamento de banco de dados;
+- Podemos avançar e retroceder a qualquer momento;
+- Adicionar colunas e remover de forma facilitada;
+- Fazer o setup de BD de uma nova instalação em apenas um comando;
+- Podemos verificar as migrations com migrate:status;
+- Quando precisamos adicionar um novo campo a uma tabela, devemos criar uma nova migration;
+- Porém devemos tomar cuidado para não rodar o comando fresh, e apagar os dados já existentes;
+- O comando rollback pode ser utilizado para voltar uma migration;
+- Para voltar todas podemos utilizar o reset;
+- Para voltar todas e rodar o migrate novamente utilizamos o refresh;
