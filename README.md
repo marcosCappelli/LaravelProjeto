@@ -41,3 +41,35 @@
 - Ao redefinir a rota devemos colocar o parâmetro desta maneira: {id};
 - Podemos ter parâmetros opcionais também, adicionando uma ?;
 - O laravel aceita também query parameters, utilizando a seguinte sintaxe: ?nome=Marcos&idade=55;
+## Controlles
+- Os Controlles são parte fundamental de toda aplicação em Laravel;
+- Geralmente condensam a maior parte da lógica;
+- Teem o papel de enviar e esperar resposta do banco de dados;
+- E também receber e enviar alguma resposta para as views;
+- Os Controlles podem ser criados via artisan;
+- É comum retornar uma view ou redirecionar para uma URL pelo Controller;
+## Conexão com o banco
+- A conexão do Laravel com o banco é configurada pelo arquivo .env;
+- Isso nos proporciona maior liberdade e também segurança na aplicação;
+- O Laravel utiliza um ORM (Object-Relational Mapping) chamada Eloquent;
+- E também para a criação de tabelas as migrations;
+## Migrations
+- As migrations funcionam como um versionamento de banco de dados;
+- Podemos avançar e retroceder a qualquer momento;
+- Adicionar colunas e remover de forma facilitada;
+- Fazer o setup de BD de uma nova instalação em apenas um comando;
+- Podemos verificar as migrations com migrate:status;
+- Quando precisamos adicionar um novo campo a uma tabela, devemos criar uma nova migration;
+- Porém devemos tomar cuidado para não rodar o comando fresh, e apagar os dados já existentes;
+- O comando rollback pode ser utilizado para voltar uma migration;
+- Para voltar todas podemos utilizar o reset;
+- Para voltar todas e rodar o migrate novamente utilizamos o refresh;
+## Eloquent
+- Eloquent é a ORM do laravel;
+- Cada tabela tem um Model que é responsável pela interação entre as requisições ao banco;
+- A convenção para o Model é o nome da entidade em singular, enqunato a tabela é a entidade no plural: Event e events;
+- No Model faremos poucas alterações dos arquivos, geralmente configurações especificas;
+## Adicionar registro ao banco
+- No laravel é comumn ter uma action especifica para o post chamada de store;
+- Lá vamos criar o objeto e compor ele com base nos dados enviados pelo POST;
+- Com o objeto formado utilizamos o método save para persistir os dados;
