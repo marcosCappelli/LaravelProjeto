@@ -41,3 +41,15 @@
 - Ao redefinir a rota devemos colocar o parâmetro desta maneira: {id};
 - Podemos ter parâmetros opcionais também, adicionando uma ?;
 - O laravel aceita também query parameters, utilizando a seguinte sintaxe: ?nome=Marcos&idade=55;
+## Controlles
+- Os Controlles são parte fundamental de toda aplicação em Laravel;
+- Geralmente condensam a maior parte da lógica;
+- Teem o papel de enviar e esperar resposta do banco de dados;
+- E também receber e enviar alguma resposta para as views;
+- Os Controlles podem ser criados via artisan;
+- É comum retornar uma view ou redirecionar para uma URL pelo Controller;
+## Conexão com o banco
+- A conexão do Laravel com o banco é configurada pelo arquivo .env;
+- Isso nos proporciona maior liberdade e também segurança na aplicação;
+- O Laravel utiliza um ORM (Object-Relational Mapping) chamada Eloquent;
+- E também para a criação de tabelas as migrations;
