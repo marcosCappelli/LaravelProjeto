@@ -30,20 +30,20 @@
             <nav class="navbar navbar-expand-lg navbar-light">
                 <div class="collapse navbar-collapse" id="navbar">
                     <a href="/" class="navbar-brand">
-                        <img src="/img/event.png" alt="MVC Events">
+                        <img src="/img/evento-vip.png" alt="MVC Events">
                     </a>
                     <ul class="navbar-nav">
                         <li class="nav-item">
                             <a href="/" class="nav-link">Eventos</a>
                         </li>
                         <li class="nav-item">
-                            <a href="/" class="nav-link">Criar Eventos</a>
+                            <a href="/create" class="nav-link">Criar Eventos</a>
                         </li>
                         <li class="nav-item">
-                            <a href="/" class="nav-link">Entrar</a>
+                            <a href="/entrar" class="nav-link">Entrar</a>
                         </li>
                         <li class="nav-item">
-                            <a href="/" class="nav-link">Cadastrar</a>
+                            <a href="/cadastrar" class="nav-link">Cadastrar</a>
                         </li>
                     </ul>
                 </div>
@@ -54,6 +54,8 @@
         <footer>
             <p>MVC Events &copy; 2022</p>
         </footer>
+            <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+            <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     </body>
       
 </html>

@@ -13,37 +13,16 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
+use App\Http\Controllers\EventController;
 
-    $nome = "Marcos";
-    $idade = 55;
-
-    $arr = [10, 20, 30, 40 ,50];
-
-    $nomes = ["Biro", "Miro", "Liro"];
-
-    return view('welcome',
-     ['nome' => $nome,
-      "idade" => $idade,
-      'profissao' => "Programador",
-      'arr' => $arr,  
-      'nomes' => $nomes
-    ]);
-});
-
+Route::get('/', [EventController::class, "index"]);
+Route::get('/create', [EventController::class, "create"]);
+Route::get('/entrar', [EventController::class, "login"]);
+Route::get('/cadastrar', [EventController::class, "register"]);
+Route::post('/events', [EventController::class, 'store']);
 
 Route::get('/contact', function () {
     return view('Contact');
 });
 
 
-Route::get('/produtos', function () {
-
-    $busca = request("search");
-
-    return view('products', ["busca" => $busca]);
-});
-
-Route::get('/produto/{id?}', function ($id = null) {
-    return view('product', ['id' => $id]);
-});
