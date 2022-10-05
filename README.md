@@ -64,3 +64,12 @@
 - O comando rollback pode ser utilizado para voltar uma migration;
 - Para voltar todas podemos utilizar o reset;
 - Para voltar todas e rodar o migrate novamente utilizamos o refresh;
+## Eloquent
+- Eloquent é a ORM do laravel;
+- Cada tabela tem um Model que é responsável pela interação entre as requisições ao banco;
+- A convenção para o Model é o nome da entidade em singular, enqunato a tabela é a entidade no plural: Event e events;
+- No Model faremos poucas alterações dos arquivos, geralmente configurações especificas;
+## Adicionar registro ao banco
+- No laravel é comumn ter uma action especifica para o post chamada de store;
+- Lá vamos criar o objeto e compor ele com base nos dados enviados pelo POST;
+- Com o objeto formado utilizamos o método save para persistir os dados;
