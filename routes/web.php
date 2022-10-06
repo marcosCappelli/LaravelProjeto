@@ -17,9 +17,13 @@ use App\Http\Controllers\EventController;
 
 Route::get('/', [EventController::class, "index"]);
 Route::get('/create', [EventController::class, "create"]);
+Route::get('/events/{id}', [EventController::class, "show"]);
+Route::post('/events', [EventController::class, 'store']);
+
+
 Route::get('/entrar', [EventController::class, "login"]);
 Route::get('/cadastrar', [EventController::class, "register"]);
-Route::post('/events', [EventController::class, 'store']);
+
 
 Route::get('/contact', function () {
     return view('Contact');
