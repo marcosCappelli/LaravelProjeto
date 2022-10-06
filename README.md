@@ -73,3 +73,9 @@
 - No laravel é comumn ter uma action especifica para o post chamada de store;
 - Lá vamos criar o objeto e compor ele com base nos dados enviados pelo POST;
 - Com o objeto formado utilizamos o método save para persistir os dados;
+## Flash Messages
+- Podemos adicionar mensagens ao usuário por session;
+- Estas mensagens são conhecidas por flash messages;
+- Podemos adicionar com o método with nos Controllers;
+- Utilizadas para apresentar um feedback ao usuário;
+- No blade podemos verificar a presença da mensaegm pela diretiva @session;
