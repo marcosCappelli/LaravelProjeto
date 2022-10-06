@@ -38,6 +38,16 @@ header #navbar {
     border-color: #c28008;
 }
 
+.msg {
+    background-color: #b0dee6;
+    color: rgb(25, 78, 80);
+    border: 1px solid #b0dee6;
+    width: 100%;
+    margin-bottom: 0;
+    text-align: center;
+    padding: 10px;
+}
+
 /* navbar */
 #navbar img {
     width: 50px;
