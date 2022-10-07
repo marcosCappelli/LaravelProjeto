@@ -79,3 +79,14 @@
 - Podemos adicionar com o método with nos Controllers;
 - Utilizadas para apresentar um feedback ao usuário;
 - No blade podemos verificar a presença da mensaegm pela diretiva @session;
+## Salvando imagem no Laravel
+- Para fezer o upload de imagens precisamos mudar o enctype do form e também criar um input de envio das mesmas;
+- No controller vamos fazer um tratamento de verificação da imagem que foi enviada;
+- E depois vamos salvar ela com um nome único em um diretório do projeto;
+- No banco salvamos apenas o path para a imagem;
+## Resgatando um registro
+- Vamos fazer a view do evento;
+- E com isso aprender a resgatar apenas um registro pelo Eloquent;
+- Vamos utilizar o método findOrFail;
+- E também criar uma nova view e rota para esta função;
+- Esta tela tem a função de exibir todas as informações do evento e também o botão de participar;
