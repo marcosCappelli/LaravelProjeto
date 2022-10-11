@@ -40,10 +40,10 @@
                             <a href="/create" class="nav-link">Criar Eventos</a>
                         </li>
                         <li class="nav-item">
-                            <a href="/entrar" class="nav-link">Entrar</a>
+                            <a href="/login" class="nav-link">Entrar</a>
                         </li>
                         <li class="nav-item">
-                            <a href="/cadastrar" class="nav-link">Cadastrar</a>
+                            <a href="/register" class="nav-link">Cadastrar</a>
                         </li>
                     </ul>
                 </div>
