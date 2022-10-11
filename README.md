@@ -90,3 +90,12 @@
 - Vamos utilizar o método findOrFail;
 - E também criar uma nova view e rota para esta função;
 - Esta tela tem a função de exibir todas as informações do evento e também o botão de participar;
+## Salvando JSON
+- Podemos salvar um conjunto de dados no banco para itens de múltipla escolha;
+- Vamos criar um campo determinado de json via migrations;
+- No front-end podemos utilizar inputs com checkbox;
+- Após o envio para Controller, apenas recebemos do request os itens e resto do processo é igual ao dos outrds dados do nosso Model;
+## Salvando datas
+- Para salvar datas no Laravel precisamos criar um input do tipo date na nossa view;
+- Um campo de dateTime via migrations;
+- E processar o envio dos dados via Controller pelo request de POST;
